@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lato:wght@400&family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'League Spartan', sans-serif;
+            background-color: #2c2c2c;
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .banner {
+            background-image: url('images/banner.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 50px; 
+            text-align: left;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            max-width: 1200px;
+            width: 100%;
+            height: 300px; 
+            display: flex;
+            align-items: center; 
+        }
+
+        .banner.container {
+            width: 30%; 
+            left: 0;
+            top: 30%;
+            color: white;
+        }
+
+        .banner h1,
+        .banner h2,
+        .banner p {
+            color: #fff;
+            margin: 0 0 50px; 
+        }
+
+        .banner h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .banner h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .btn-dark {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-dark:hover {
+            transform: scale(1.05);
+            background-color: #444;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: #3e3e3e;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-image, .users-image, .download-image {
+            width: 70%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-image:hover, .users-image:hover, .download-image:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .grid-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            width: 220px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner">
+        <div class="container">
+            <h1>Plus qu’une app, votre espace de liberté.</h1>
+            <h2>Transformez le quotidien en expérience.</h2>
+            <p>Découvrez Aura, une application pour une véritable évasion, où chaque instant devient une opportunité de bien-être.</p>
+            <a href="#" class="btn-dark">Découvrir</a>
+        </div>
+    </div>
+
+    <section class="feature">
+        <div class="container">
+            <h2>Fonctionnalités de l'application</h2>
+            <p>Une immersion complète dans un univers apaisant, conçu pour vous offrir une déconnexion essentielle.</p>
+            <img src="images/appfeature.jpg" alt="Fonctionnalités de l'application" class="feature-image">
+        </div>
+    </section>
+
+    <section class="users">
+        <div class="container">
+            <h2>Ce que disent nos utilisateurs</h2>
+            <p>Une communauté inspirée, partageant un même désir de sérénité et de bien-être.</p>
+            <img src="images/happy_users.jpg" alt="Utilisateurs heureux" class="users-image">
+        </div>
+    </section>
+
+    <section class="download">
+        <div class="container">
+            <h2>Disponible dès maintenant</h2>
+            <p>Téléchargez Aura et explorez un monde de tranquillité et d'inspiration personnelle.</p>
+            <img src="images/downloadapp.jpg" alt="Téléchargement de l'application" class="download-image">
+        </div>
+    </section>
+
+    <div data-tf-live="01JBCH0H5Z26HKA1T4A4GSJTF0"></div>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+
+    <section class="grid-section">
+        <div class="grid-container">
+            <div class="card">
+                <h3>Connexion sécurisée</h3>
+                <p>Gardez vos informations personnelles en toute sécurité grâce à une technologie de pointe.</p>
+            </div>
+            <div class="card">
+                <h3>Expérience personnalisée</h3>
+                <p>Personnalisez votre expérience avec des réglages adaptés à vos besoins.</p>
+            </div>
+            <div class="card">
+                <h3>Statistiques et progrès</h3>
+                <p>Suivez vos progrès et retrouvez une expérience enrichissante.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
